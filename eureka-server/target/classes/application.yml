@@ -1,0 +1,13 @@
+#配置端口
+server:
+  port: 10086
+#添加服务器名称
+spring:
+  application:
+    name: eureka-server
+#注册服务
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10087/eureka
+

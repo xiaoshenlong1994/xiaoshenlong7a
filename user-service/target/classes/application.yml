@@ -1,0 +1,27 @@
+#配置端口和拦截
+server:
+  port: 8082
+  servlet:
+    path: "*.do"
+#配置数据库驱动和服务名称信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/usermanager
+    username: root
+    password: 123456
+  application:
+    name: user-service
+#配置Mybatis信息
+mybatis:
+  type-aliases-package: com.xiaoshenlong.vo
+#配置日志信息
+logging:
+  level:
+    com.xiaoshenlong: debug
+    org.mybatis: debug
+#配置注册中心地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka,http://127.0.0.1:10087/eureka
