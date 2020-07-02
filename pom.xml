@@ -24,7 +24,7 @@
 
     <properties>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
-        <mysql.version>5.1.47</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <oracle.version>12.2.0.1</oracle.version>
         <mapper.version>2.0.3</mapper.version>
     </properties>
